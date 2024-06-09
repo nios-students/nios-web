@@ -1,6 +1,6 @@
 <nav>
 	<a href="/contact">Contact</a>
-	<a href="https://github.com/nios-students/docs">Contribute</a>
+	<a href="/wiki/Contribute">Contribute</a>
 	<a href="/wiki">Wiki</a>
 	<a href="/">Home</a>
 	<div id="nostyle"></div>

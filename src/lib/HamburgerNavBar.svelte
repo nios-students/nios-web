@@ -55,7 +55,7 @@
 <div id="nav_actual" style="--my-height: {nav_height}px">
 	<a href="/" class="nav_link">Home</a>
 	<a href="/wiki" class="nav_link">Wiki</a>
-	<a href="https://github.com/nios-students/docs" class="nav_link">Contribute</a>
+	<a href="/wiki/Contribute" class="nav_link">Contribute</a>
 	<a href="/contact" class="nav_link">Contact</a>
 </div>
 
