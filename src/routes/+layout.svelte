@@ -22,7 +22,7 @@
 
 <footer>
 	<p>
-		Copyright © Nios-Students Contributors 2024 • All wiki content licensed under <a
+		Copyright © NIOS-Students Contributors 2024 • All wiki content licensed under <a
 			href="https://creativecommons.org/licenses/by-sa/4.0/"
 			>Creative Commons Attribution-ShareAlike</a
 		>
