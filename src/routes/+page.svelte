@@ -4,7 +4,7 @@
 
 <div id="main">
 	<h1>Welcome to NIOS Students</h1>
-	  <p>NIOS-Students  is a project by「NIOS Unofficial」 a community of  NIOS students.</p>
+	  <p>NIOS-Students  is a project by「NIOS Unofficial」 a community of  NIOS students</p>
 	<h2>Contributors:</h2>
 
 	<div id="contributors">
