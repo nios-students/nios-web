@@ -22,7 +22,7 @@
 
 <footer>
 	<p>
-		Copyright © NIOS-Students Contributors• All wiki content licensed under <a
+		Copyright © NIOS-Students Contributors • All wiki content licensed under <a
 			href="https://creativecommons.org/licenses/by-sa/4.0/"
 			>Creative Commons Attribution-ShareAlike</a
 		>
