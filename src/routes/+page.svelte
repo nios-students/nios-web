@@ -13,7 +13,7 @@
 			profile_picture="https://avatars.githubusercontent.com/u/84176052?v=4"
 		/>
 		<Contributor
-			name="pingforhelp(GOD OF TIME
+			name="pingforhelp (GOD OF TIME)"
 )"
 			profile_picture="https://avatars.githubusercontent.com/u/171056689?v=4"
 		/>
