@@ -2,7 +2,7 @@
 	<h1>Contact Us!</h1>
 	<ul>
 		<li>
-			<a href="https://discord.gg/gq38hhAY"> Discord </a>
+			<a href="https://nios-students.pages.dev/wiki/Get_Help"> First Link </a>
 		</li>
 	</ul>
 </div>
