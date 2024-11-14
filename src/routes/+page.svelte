@@ -4,7 +4,7 @@
 
 <div id="main">
 	<h1>Welcome to NIOS Students</h1>
-	  <p>NIOS-Students  is a project by「NIOS Unofficial」 a community of  NIOS students</p>
+	  <p>NIOS-Students  is a project by「NIOS Unofficial」a community of  NIOS students</p>
 	<h2>Contributors</h2>
 
 	<div id="contributors">
@@ -13,7 +13,7 @@
 			profile_picture="https://avatars.githubusercontent.com/u/84176052?v=4"
 		/>
 		<Contributor
-			name="pingforhelp (GOD OF TIME)"
+			name="pingforhelp"
 )"
 			profile_picture="https://avatars.githubusercontent.com/u/171056689?v=4"
 		/>
