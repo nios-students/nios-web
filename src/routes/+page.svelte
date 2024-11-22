@@ -27,13 +27,7 @@
 		/>
 	</div>
 </div>
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=17475121&style=0009&nbdigits=3&type=ip&initCount=" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
-                                    
-                                        
-                                          
-                            
+
 <style>
 	#main {
 		display: flex;
