@@ -14,7 +14,6 @@
 		/>
 		<Contributor
 			name="pingforhelp"
-)"
 			profile_picture="https://avatars.githubusercontent.com/u/171056689?v=4"
 		/>
 		<Contributor
