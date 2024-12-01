@@ -43,3 +43,13 @@
 		flex-wrap: wrap;
 	}
 </style>
+
+!-- Add Visitor Counter Here -->
+    <footer>
+        <!-- hitwebcounter Code START -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=17474895&style=0009&nbdigits=3&type=ip&initCount=" 
+            title="Counter Widget" alt="Visit counter For Websites" border="0" />
+        </a>
+        <!-- hitwebcounter Code END -->
+   
