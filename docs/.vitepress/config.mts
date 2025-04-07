@@ -33,6 +33,7 @@ const vitePressOptions = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // Used this as reference: https://github.com/FOSSonTop/website/blob/main/docs/.vitepress/config.mts
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Contribute', link: "/contribute" },
