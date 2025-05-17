@@ -53,6 +53,7 @@ const vitePressOptions = {
       { icon: 'discord', link: 'https://discord.gg/eunfcuvHud' },
       { icon: 'youtube', link: 'https://www.youtube.com/@NIOSUnofficial' },
       { icon: 'github', link: 'https://github.com/nios-students' }
+      { icon: 'BuyAmy A Coffee', link: 'https://buyamyaCoffee.com' }
     ],
     cleanUrls: true,
     lastUpdated: true,
