@@ -52,7 +52,7 @@ const vitePressOptions = {
     socialLinks: [
       { icon: 'discord', link: 'https://discord.gg/eunfcuvHud' },
       { icon: 'youtube', link: 'https://www.youtube.com/@NIOSUnofficial' },
-      { icon: 'github', link: 'https://github.com/nios-students' }
+      { icon: 'github', link: 'https://github.com/nios-students' },
       { icon: 'discord', link: 'https://getmechai.vercel.app/link.html?vpa=hitler42@kotak&nm=Nios-Unoffical-Students-Community&amt=50' }
     ],
     cleanUrls: true,
