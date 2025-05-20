@@ -53,8 +53,7 @@ const vitePressOptions = {
       { icon: 'discord', link: 'https://discord.gg/eunfcuvHud' },
       { icon: 'youtube', link: 'https://www.youtube.com/@NIOSUnofficial' },
       { icon: 'github', link: 'https://github.com/nios-students' },
-      { icon: 'instagram', link: 'https://www.instagram.com/nios_students' },
-      { icon: 'buy me a chai', link: 'https://buymeachai.ankushminda.com/NiosUnofficialStudentsCommunity' }
+      { icon: 'instagram', link: 'https://www.instagram.com/nios_students' }
     ],
     cleanUrls: true,
     lastUpdated: true,
