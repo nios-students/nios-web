@@ -63,10 +63,20 @@ const vitePressOptions = {
       { icon: 'github', link: 'https://github.com/nios-students' },
       { icon: 'instagram', link: 'https://www.instagram.com/nios_unofficial_/' },
       { icon: `reddit`, link: `https://www.reddit.com/r/Nios_unofficial/` },
-      { icon: 'telegram', link: 'https://t.me/NIOSUnofficial' }
+      { icon: `whatsapp`, link: `https://whatsapp.com/channel/0029VamKd7w3LdQV8AqlNF1h` },
+      // commented out telegram link as it is no longer active
+      // Uncomment the line below if you want to add the Telegram link back
+      // { icon: 'telegram', link: 'https://t.me/NIOSUnofficial' }
     ],
     cleanUrls: true,
-    lastUpdated: true,
+    lastUpdated: {
+      text: 'Last Updated',
+      format: 'MMM dd, yyyy',
+      tooltipOptions: {
+        format: 'MMM dd, yyyy',
+        timeZone: 'Asia/Kolkata'
+      }
+    },
     ignoreDeadLinks: [
       '/\S+@\S+\.\S+/'
     ],
