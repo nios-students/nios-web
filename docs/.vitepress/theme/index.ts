@@ -50,7 +50,7 @@ export default defineComponent({
 
             // Create the heading
             const h1: HTMLHeadingElement = document.createElement('h1');
-            h1.textContent = 'Welcome to FAQ';
+            h1.textContent = 'Welcome to wiki';
             content.appendChild(h1);
 
             // Create the paragraph with a clickable link
