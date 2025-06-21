@@ -15,6 +15,55 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     onMounted(() => {
+      // why? for fun
+      console.log(`
+
+███╗   ██╗██╗ ██████╗ ███████╗                                            
+████╗  ██║██║██╔═══██╗██╔════╝                                            
+██╔██╗ ██║██║██║   ██║███████╗                                            
+██║╚██╗██║██║██║   ██║╚════██║                                            
+██║ ╚████║██║╚██████╔╝███████║                                            
+╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚══════╝                                            
+                                                                          
+██╗   ██╗███╗   ██╗ ██████╗ ███████╗███████╗██╗ ██████╗██╗ █████╗ ██╗     
+██║   ██║████╗  ██║██╔═══██╗██╔════╝██╔════╝██║██╔════╝██║██╔══██╗██║     
+██║   ██║██╔██╗ ██║██║   ██║█████╗  █████╗  ██║██║     ██║███████║██║     
+██║   ██║██║╚██╗██║██║   ██║██╔══╝  ██╔══╝  ██║██║     ██║██╔══██║██║     
+╚██████╔╝██║ ╚████║╚██████╔╝██║     ██║     ██║╚██████╗██║██║  ██║███████╗
+ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝     ╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝
+
+        `);
+
+
+      /**
+       * Redirects the user from the wiki landing page to the home page with an alert.
+       *
+       * Purpose:
+       * - This logic is used to inform users that the /wiki or /wiki/ route is no longer maintained.
+       * - It helps prevent users from accessing outdated or unsupported content.
+       * - Users are redirected to the home page, where the latest resources and information are available.
+       *
+       * How it works:
+       * - When the user navigates to /wiki or /wiki/, an alert is shown explaining the redirect.
+       * - After the user acknowledges the alert, they are automatically redirected to the home page ('/').
+       *
+       * Customization:
+       * - If you do not want to show the alert before redirecting, simply comment out or remove the alert() line below.
+       * - You can also customize the alert message to better fit your site's tone or provide additional instructions.
+       * - You can also add additional logic to the alert() 
+       * 
+       * sugestions(for future maintainers):
+       *  if you to make a custon page on /wiki/ you can add a index.md on the docs(https://github.com/nios-students/docs/wiki) and you can add anything you want on that page.like custom redirecting page and all 
+       *  ~(VK)
+       */
+      // *******************************************************************************************************************************
+
+      if (route.path === '/wiki' || route.path === `/wiki/`) {
+        alert("This page is no longer maintained.\n\nYou will be redirected to the home page for the latest resources and information.\n\nThank you for your understanding!");
+        window.location.href = '/';
+      }
+      // *******************************************************************************************************************************
+
       // Only run in the browser environment
       if (typeof window !== 'undefined') {
         // Check if the pop-up has already been dismissed
@@ -60,7 +109,7 @@ export default defineComponent({
             const link: HTMLAnchorElement | null = p.querySelector('a');
             if (link) {
               Object.assign(link.style, {
-                color: 'blue',
+                color: 'red',
                 textDecoration: 'underline'
               });
             }
