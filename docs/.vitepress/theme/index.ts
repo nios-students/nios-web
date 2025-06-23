@@ -60,7 +60,7 @@ export default defineComponent({
 
       if (route.path === '/wiki' || route.path === `/wiki/`) {
         alert("This page is no longer maintained.\n\nYou will be redirected to the home page for the latest resources and information.\n\nThank you for your understanding!");
-        window.location.href = '/';
+        window.location.href = '/links/';
       }
       // *******************************************************************************************************************************
 
