@@ -66,7 +66,7 @@ const vitePressOptions = {
       { icon: `whatsapp`, link: `https://whatsapp.com/channel/0029VamKd7w3LdQV8AqlNF1h` },
       // commented out telegram link as it is no longer active
       // Uncomment the line below if you want to add the Telegram link back
-      // { icon: 'telegram', link: 'https://t.me/NIOSUnofficial' }
+      { icon: 'telegram', link: 'https://t.me/NIOSUnofficial' }
     ],
     cleanUrls: true,
     lastUpdated: {
