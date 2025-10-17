@@ -80,7 +80,7 @@ export default defineComponent({
       (function showNewDomainPopup() {
         // uncomment below line to test locally
         let localhost = "localhost";
-        let oldDomain = ["https://nios-students.pages.dev/", localhost];
+        let oldDomain = ["nios-students.pages.dev", localhost];
         const currentDomain = window.location.hostname;
         // Wait for DOM to be ready
         if (document.readyState === 'loading') {
