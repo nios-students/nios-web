@@ -260,7 +260,8 @@ export default defineComponent({
             document.head.appendChild(prefetchLink);
           }, 500);
         }
-      })();
+        // stoping for some fixes 
+      });
       // =================================================================== end of new domain popup ============================================================================
 
       // Only run in the browser environment
