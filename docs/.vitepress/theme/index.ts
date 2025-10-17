@@ -71,6 +71,8 @@ export default defineComponent({
       the code below is for showing popup to user about new domain migration
       it will show only once per user using local storage and will not show again if user has dismissed it by pressing esc key
       this is also a workaround for to pushing magration news to user but its not proper way :) coz i don't know how to write vue
+      future maintainers have to rewrite this in vue sorry for that :(
+      ~(VK)
       
       */
 
