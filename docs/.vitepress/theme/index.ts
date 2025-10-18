@@ -125,16 +125,16 @@ export default defineComponent({
               transition: 'opacity 0.3s ease-in-out'
             });
 
-            // Create popup container
+            // Create responsive popup container
             const popup = document.createElement('div');
             Object.assign(popup.style, {
-              // backgroundColor: 'rgba(0, 0, 0, 1)',
               backgroundColor: "#1b1b1f",
               borderRadius: '15px',
-              padding: '30px',
+              padding: '20px', // Reduced base padding
               maxWidth: '450px',
               width: '90%',
-              maxHeight: 'fit-content',
+              maxWidth: 'min(90vw, 450px)', // Responsive max width
+              maxHeight: '90vh', // Limit height to viewport
               overflow: 'auto',
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
               transform: 'scale(0.7)',
@@ -142,8 +142,26 @@ export default defineComponent({
               opacity: '0',
               textAlign: 'center',
               position: 'relative',
-              fontFamily: 'system-ui, -apple-system, sans-serif'
+              fontFamily: 'system-ui, -apple-system, sans-serif',
+              height: 'fit-content',
+              // Mobile-specific responsive styles
+              ...(() => {
+                // Detect mobile via user agent or screen size
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+
+                return {
+                  padding: isMobile ? '15px' : '30px', // Smaller padding on mobile
+                  borderRadius: isMobile ? '12px' : '15px', // Slightly smaller radius
+                  fontSize: isMobile ? '14px' : '16px', // Base font size adjustment
+                  maxHeight: '85vh', // More headroom on mobile
+                  // Touch-friendly spacing
+                  ...(isMobile && {
+                    paddingBottom: '40px' // Extra space for close button
+                  })
+                };
+              })()
             });
+
 
             // Title
             const title = document.createElement('h2');
@@ -208,8 +226,76 @@ export default defineComponent({
             });
             footer.innerHTML = `press ESC to close the popup`;
 
+            // create close button
+            const closeButton = document.createElement('button');
+            closeButton.innerHTML = `
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+`;
+            Object.assign(closeButton.style, {
+              position: 'absolute',
+              top: '12px',
+              right: '12px',
+              width: '32px',
+              height: '32px',
+              border: 'none',
+              background: 'rgba(255, 255, 255, 0.1)',
+              borderRadius: '50%',
+              color: '#ccc',
+              cursor: 'pointer',
+              userSelect: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backdropFilter: 'blur(10px)',
+              transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+            });
+
+            // Hover effects
+            closeButton.addEventListener('mouseenter', () => {
+              Object.assign(closeButton.style, {
+                background: 'rgba(255, 255, 255, 0.2)',
+                color: 'white',
+                transform: 'scale(1.05)',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)'
+              });
+            });
+
+            closeButton.addEventListener('mouseleave', () => {
+              Object.assign(closeButton.style, {
+                background: 'rgba(255, 255, 255, 0.1)',
+                color: '#ccc',
+                transform: 'scale(1)',
+                boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+              });
+            });
+
+            // Active state
+            closeButton.addEventListener('mousedown', () => {
+              closeButton.style.transform = 'scale(0.95)';
+            });
+
+            closeButton.addEventListener('mouseup', () => {
+              closeButton.style.transform = 'scale(1.05)';
+            });
+
+            // Click handler
+            closeButton.addEventListener('click', (e) => {
+              e.stopPropagation();
+              dismissPopup();
+            });
+
+            // Accessibility
+            closeButton.setAttribute('aria-label', 'Close popup');
+            closeButton.setAttribute('role', 'button');
+            closeButton.tabIndex = 0;
+
             // Assemble popup
             popup.appendChild(title);
+            popup.appendChild(closeButton);
             popup.appendChild(message);
             popup.appendChild(footer);
             overlay.appendChild(popup);
@@ -260,8 +346,7 @@ export default defineComponent({
             document.head.appendChild(prefetchLink);
           }, 500);
         }
-        // stoping for some fixes 
-      });
+      })();
       // =================================================================== end of new domain popup ============================================================================
 
       // Only run in the browser environment
