@@ -30,6 +30,10 @@ const vitePressOptions = {
   markdown: {
     math: true
   },
+  head: [
+    ['meta', { name: 'google-adsense-account', content: 'ca-pub-4433989067589022' }]
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // Used this as reference: https://github.com/FOSSonTop/website/blob/main/docs/.vitepress/config.mts
