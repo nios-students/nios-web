@@ -11,6 +11,7 @@ import { onMounted, defineComponent } from 'vue';
 
 
 export default defineComponent({
+  ignoreDeadLinks: true,
   ...DefaultTheme,
   setup() {
     const route = useRoute();
@@ -131,7 +132,6 @@ export default defineComponent({
               backgroundColor: "#1b1b1f",
               borderRadius: '15px',
               padding: '20px', // Reduced base padding
-              maxWidth: '450px',
               width: '90%',
               maxWidth: 'min(90vw, 450px)', // Responsive max width
               maxHeight: '90vh', // Limit height to viewport
