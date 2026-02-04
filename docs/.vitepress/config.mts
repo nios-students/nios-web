@@ -30,6 +30,8 @@ const vitePressOptions = {
   markdown: {
     math: true
   },
+  ignoreDeadLinks: true,
+
   head: [
     ['meta', { name: 'google-adsense-account', content: 'ca-pub-4433989067589022' }]
   ],
