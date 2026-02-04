@@ -11,7 +11,6 @@ import { onMounted, defineComponent } from 'vue';
 
 
 export default defineComponent({
-  ignoreDeadLinks: true,
   ...DefaultTheme,
   setup() {
     const route = useRoute();
