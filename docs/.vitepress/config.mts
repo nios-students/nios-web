@@ -47,7 +47,7 @@ const vitePressOptions = {
       { text: 'Contribute', link: "/contribute" },
       { text: 'Request Takedown', link: "/takedown" },
       { text: 'Typography', link: "/typography" },
-      { text: 'Privacy Policy', link: "/privacy-policy" },
+      { text: 'Privacy Policy', link: "/Privacy Policy" },
       // { text: 'Queries and Suggestions', link: "https://github.com/nios-students/docs/discussions" },
       {
         text: 'Wiki Navigation',
