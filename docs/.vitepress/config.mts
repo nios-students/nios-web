@@ -67,10 +67,10 @@ const vitePressOptions = {
         target: '_blank'
       },
       { icon: 'discord', link: 'https://discord.gg/eunfcuvHud' },
+      { icon: `reddit`, link: `https://www.reddit.com/r/Nios_unofficial/` },
+      { icon: 'instagram', link: 'https://www.instagram.com/nios_unofficial_/' },
       { icon: 'youtube', link: 'https://www.youtube.com/@NIOSUnofficial' },
       { icon: 'github', link: 'https://github.com/nios-students' },
-      { icon: 'instagram', link: 'https://www.instagram.com/nios_unofficial_/' },
-      { icon: `reddit`, link: `https://www.reddit.com/r/Nios_unofficial/` },
       { icon: `whatsapp`, link: `https://whatsapp.com/channel/0029VamKd7w3LdQV8AqlNF1h` },
       // commented out telegram link as it is no longer active
       // Uncomment the line below if you want to add the Telegram link back
@@ -96,7 +96,7 @@ const vitePressOptions = {
         } else if (filePath.includes('home')) {
           return `https://github.dev/nios-students/docs/blob/contents/home/${rest}`
         } else if (filePath.includes('contribute')) {
-          return `https://github.dev/nios-students/helper_scripts/blob/main/md/contribute.md`
+          return `https://github.com/nios-students`
         } else if (filePath.includes('takedown')) {
           return `https://github.dev/nios-students/helper_scripts/blob/main/md/takedown.md`
         } else if (filePath.includes('typography')) {
