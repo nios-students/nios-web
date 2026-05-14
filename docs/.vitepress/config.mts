@@ -25,7 +25,7 @@ function genSidebarConfig(doc: string) {
 const vitePressSidebarOptions = [genSidebarConfig("wiki")]
 
 const vitePressOptions = {
-  title: "NIOS Students",
+  title: "NIOS Unofficial",
   description: "Simple Guides made by NIOS Students for NIOS Students.",
   markdown: {
     math: true
