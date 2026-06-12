@@ -137,3 +137,33 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+
+/* NIOSHUB featured card */
+.VPFeatures .items .item:last-child {
+  transform: scale(1.05);
+
+  border: 1px solid rgba(189, 52, 254, 0.4);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(189, 52, 254, 0.12),
+      rgba(65, 209, 255, 0.12)
+    );
+
+  box-shadow:
+    0 10px 30px rgba(189, 52, 254, 0.25);
+
+  transition: all 0.25s ease;
+}
+
+.VPFeatures .items .item:last-child:hover {
+  transform: scale(1.08) translateY(-6px);
+
+  box-shadow:
+    0 15px 40px rgba(189, 52, 254, 0.4);
+}
+
+.VPFeatures .items .item:last-child .title {
+  color: #bd34fe;
+}
