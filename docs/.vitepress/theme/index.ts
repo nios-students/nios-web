@@ -452,6 +452,81 @@ export default defineComponent({
           });
         }
       }
+
+              // 🚀 NIOSHUB SIDE BUTTON
+              (function createNIOSHUBButton() {
+                if (document.getElementById('nioshub-side-button')) return;
+        
+                const button = document.createElement('a');
+        
+                button.id = 'nioshub-side-button';
+                button.href = 'https://nioshub.site';
+                button.target = '_blank';
+        
+                button.innerHTML = `
+                  <div style="font-size:18px;">🚀</div>
+                  <div>
+                    <div style="font-weight:700;">NIOSHUB</div>
+                    <div style="font-size:12px; opacity:.85;">
+                      Get Handwritten TMA PDFs
+                    </div>
+                  </div>
+                `;
+        
+                Object.assign(button.style, {
+                  position: 'fixed',
+                  right: '20px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  zIndex: '9999',
+        
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+        
+                  padding: '14px 18px',
+                  borderRadius: '18px',
+        
+                  textDecoration: 'none',
+                  color: 'white',
+        
+                  background: 'linear-gradient(135deg,#bd34fe,#41d1ff)',
+        
+                  boxShadow: '0 0 25px rgba(189,52,254,.4)',
+        
+                  transition: 'all .25s ease',
+        
+                  fontFamily: 'system-ui'
+                });
+        
+                button.onmouseenter = () => {
+                  button.style.transform =
+                    'translateY(-50%) translateX(-6px)';
+        
+                  button.style.boxShadow =
+                    '0 0 40px rgba(189,52,254,.6)';
+                };
+        
+                button.onmouseleave = () => {
+                  button.style.transform =
+                    'translateY(-50%)';
+        
+                  button.style.boxShadow =
+                    '0 0 25px rgba(189,52,254,.4)';
+                };
+        
+                if (window.innerWidth < 768) {
+                  Object.assign(button.style, {
+                    top: '',
+                    bottom: '20px',
+                    right: '12px',
+                    transform: 'none'
+                  });
+                }
+        
+                document.body.appendChild(button);
+              })();
+      
     });
   }
 });
