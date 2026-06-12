@@ -467,7 +467,7 @@ export default defineComponent({
                   <div style="font-size:18px;">🚀</div>
                   <div>
                     <div style="font-weight:700;">NIOSHUB</div>
-                    <div style="font-size:12px; opacity:.85;">
+                    <div style="font-size:15px; opacity:.85;">
                       Get Handwritten TMA PDFs
                     </div>
                   </div>
