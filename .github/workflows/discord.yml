@@ -5,11 +5,11 @@ on:
 
   push:
     branches:
-      - contents # Adjust to your default branch (e.g., 'main' or 'master')
+      - vitepress-redo # Adjust to your default branch (e.g., 'main' or 'master')
   pull_request:
     types: [opened, reopened, closed, edited]
     branches:
-      - contents
+      - vitepress-redo
   issues:
     types: [opened, edited, closed]
 
